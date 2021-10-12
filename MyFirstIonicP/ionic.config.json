@@ -1,0 +1,7 @@
+{
+  "name": "MyFirstIonicP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
