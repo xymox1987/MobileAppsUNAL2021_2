@@ -4,7 +4,7 @@
 ### Requerimientos:
 
 - [Node.js with npm](https://nodejs.org/en/download/)
-- [Ionic Framework] (https://ionicframework.com/)
+- [Ionic Framework](https://ionicframework.com/)
 
 ### Instalación y packages 
 
