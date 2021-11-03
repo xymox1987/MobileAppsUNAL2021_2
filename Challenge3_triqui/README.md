@@ -26,4 +26,8 @@
 
 ### Evidencias 
 
-![evidencia #1](images/ima1.jpg)
+- A continuación se encuentran algunos screenshots de la aplicación
+
+![Evidencia #1](images/Evidence1.png)
+
+![Evidencia #2](images/Evidence2.png)
