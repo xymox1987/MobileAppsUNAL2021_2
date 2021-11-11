@@ -1,0 +1,128 @@
+<ion-menu side="start" menuId="side-menu" contentId="main" class="side-menu" (ionWillOpen)="menuOpened()" (ionWillClose)="menuClosed()">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-item (click)="setTheme(false)" class="ion-activatable" style="margin-left: -15px;cursor: pointer">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-icon name="contrast-sharp"></ion-icon>
+      <ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cambiar Tema</ion-label>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-item>
+    <ion-item (click)="goTo('about')" class="ion-activatable" style="margin-left: -15px;cursor: pointer">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-icon name="help-outline"></ion-icon>
+      <ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acerca de</ion-label>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-item>
+    <ion-item 
+    
+     (click)="alertExit()" class="ion-activatable" style="margin-left: -15px;cursor: pointer">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-icon name="arrow-back"></ion-icon>
+      <ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salir</ion-label>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-item>
+  </ion-content>
+</ion-menu>
+<div id="main" class="ion-page">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="margin-left: -50px">UNAL:Triqui</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="restartGame($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div id="container">
+    <ion-button (click)="move('00')" id="00" fill="outline"></ion-button>
+    <ion-button (click)="move('01')" id="01" fill="outline"></ion-button>
+    <ion-button (click)="move('02')" id="02" fill="outline"></ion-button>
+    <br>
+    <ion-button (click)="move('10')" id="10" fill="outline"></ion-button>
+    <ion-button (click)="move('11')" id="11" fill="outline"></ion-button>
+    <ion-button (click)="move('12')" id="12" fill="outline"></ion-button>
+    <br>
+    <ion-button (click)="move('20')" id="20" fill="outline"></ion-button>
+    <ion-button (click)="move('21')" id="21" fill="outline"></ion-button>
+    <ion-button (click)="move('22')" id="22" fill="outline"></ion-button>
+  </div>
+  <div id="labels">
+    <ion-row class="ion-no-padding ion-no-margin">
+      <ion-col class="ion-no-padding ion-no-margin">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Modo</ion-card-subtitle>
+            <ion-card-title id="mode-label">1J</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+     
+      <ion-col class="ion-no-padding ion-no-margin">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>X</ion-card-subtitle>
+            <ion-card-title id="score-x-label">0</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding ion-no-margin">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>O</ion-card-subtitle>
+            <ion-card-title id="score-o-label">0</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding ion-no-margin">
+        <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Partidas</ion-card-subtitle>
+          <ion-card-title id="score-t-label">0</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+    <ion-col class="ion-no-padding ion-no-margin">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Nivel</ion-card-subtitle>
+          <ion-card-title id="level-label">F</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+
+      <ion-col class="ion-no-padding ion-no-margin">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Siguiente</ion-card-subtitle>
+            <ion-card-title id="next-label">-</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col class="ion-no-padding">
+      <ion-button expand="full" class="ion-no-margin" (click)="changeMode()" id="change-mode">Modo</ion-button>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <ion-button expand="full" class="ion-no-margin" (click)="startGame()" id="start-game">Iniciar</ion-button>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <ion-button expand="full" class="ion-no-margin" (click)="changeLevel()" id="level-game">Nivel</ion-button>
+    </ion-col>
+   
+  </ion-row>
+</ion-footer>
+</div>
