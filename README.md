@@ -5,6 +5,10 @@ Repositorio para los trabajos que la materia Desarrollo de Dispositivos Móviles
 
 - [Challenge_1: Hello World](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/MyFirstIonicP)
 
-### Challenge 2: Triqui Game
+### Challenge 3: Triqui Game
 
-- [Challenge_2: Triqui Game](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge3_triqui)
+- [Challenge_3: Triqui Game](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge3_triqui)
+
+### Challenge 4: Triqui Menus Dialogs
+
+- [Challenge_4: Triqui Menus Dialogs](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge4_triqui_menus_Dialogs)
