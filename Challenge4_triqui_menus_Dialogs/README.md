@@ -1,5 +1,5 @@
 # UNAL: Desarrollo de Aplicaciones para Dispositivos Móviles
-# Challenge 3: Juego Triqui 
+# Challenge 4: Triqui Game con Menu y Dialogs
 
 ### Requerimientos:
 
@@ -10,13 +10,13 @@
 
 1. Clone el repositorio
 
-2. Ingrese a la carpeta de triqui
+2. Ingrese a la carpeta de triqui_menus
 
 3. Ejecute el comando `npm install` . Este instalará los paquetes requeridos 
 
 > #### Ejecución y visualización en el navegador
 
-1. Ingrese a la carpeta de triqui.
+1. Ingrese a la carpeta de triqui_menus.
 
 2. Una vez instale los paquetes requeridos, ejecute el siguiente comando `ionic serve`
 
