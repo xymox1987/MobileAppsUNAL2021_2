@@ -26,6 +26,6 @@
 
 - A continuación se encuentran algunos screenshots de la aplicación
 
-![Evidencia #1](images/Evidence1.png)
+![Evidencia #1](images/Evidence1_c5.png)
 
-![Evidencia #2](images/Evidence2.png)
+![Evidencia #2](images/Evidence2_c5.png)
