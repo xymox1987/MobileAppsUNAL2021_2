@@ -1,5 +1,5 @@
 # UNAL: Desarrollo de Aplicaciones para Dispositivos Móviles
-# Challenge 4: Triqui Game con Menu y Dialogs
+# Challenge 5: Triqui Game con Gráficos y Sonido
 
 ### Requerimientos:
 
@@ -10,7 +10,7 @@
 
 1. Clone el repositorio
 
-2. Ingrese a la carpeta de triqui_menus
+2. Ingrese a la carpeta de triqui_images
 
 3. Ejecute el comando `npm install` . Este instalará los paquetes requeridos 
 

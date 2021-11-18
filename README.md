@@ -12,3 +12,7 @@ Repositorio para los trabajos que la materia Desarrollo de Dispositivos Móviles
 ### Challenge 4: Triqui Menus Dialogs
 
 - [Challenge_4: Triqui Menus Dialogs](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge4_triqui_menus_Dialogs)
+
+### Challenge 5: Triqui Gráficos y Sonido
+
+- [Challenge_5: Triqui Gráficos y Sonido](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge5_triqui_images)
