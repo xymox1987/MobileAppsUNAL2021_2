@@ -16,3 +16,7 @@ Repositorio para los trabajos que la materia Desarrollo de Dispositivos Móviles
 ### Challenge 5: Triqui Gráficos y Sonido
 
 - [Challenge_5: Triqui Gráficos y Sonido](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge5_triqui_images)
+
+### Challenge 6: Triqui Orientación y guardado de estados
+
+- [Challenge_5: Triqui Orientación y guardado de estados](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge6_OrientacionEstados)

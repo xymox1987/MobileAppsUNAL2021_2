@@ -1,5 +1,5 @@
 # UNAL: Desarrollo de Aplicaciones para Dispositivos Móviles
-# Challenge 5: Triqui Game con Gráficos y Sonido
+# Challenge 5: Triqui Game Orientación de Pantalla y guardado de estados
 
 ### Requerimientos:
 
