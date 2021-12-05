@@ -1,5 +1,5 @@
 # UNAL: Desarrollo de Aplicaciones para Dispositivos Móviles
-# Challenge 6: Triqui Game Cambio Imagenes Orientación Pantalla
+# Challenge 6: Triqui Game Two Players Online
 
 ### Requerimientos:
 
@@ -10,13 +10,13 @@
 
 1. Clone el repositorio
 
-2. Ingrese a la carpeta de triqui_OrientacionEstados
+2. Ingrese a la carpeta de triqui_TwoPlayers
 
 3. Ejecute el comando `npm install` . Este instalará los paquetes requeridos 
 
 > #### Ejecución y visualización en el navegador
 
-1. Ingrese a la carpeta de triqui_OrientacionEstados.
+1. Ingrese a la carpeta de triqui_TwoPlayers.
 
 2. Una vez instale los paquetes requeridos, ejecute el siguiente comando `ionic serve`
 

@@ -20,3 +20,7 @@ Repositorio para los trabajos que la materia Desarrollo de Dispositivos Móviles
 ### Challenge 6: Triqui Orientación y guardado de estados
 
 - [Challenge_6: Triqui Orientación y guardado de estados](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge6_OrientacionEstados)
+
+### Challenge 7: Triqui Two Players Online
+
+- [Challenge_7: Triqui Two PLayers Online](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge6_OrientacionEstados)

@@ -1,0 +1,106 @@
+.side-menu {
+  --width: 300px;
+}
+
+ion-header {
+  height: 55px;
+}
+
+ion-title, ion-content {
+  text-align: center;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ion-content ion-button {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: -3px -5px 0 0;
+  --border-radius: 0;
+  color: rgba(255, 0, 0, 0);
+}
+
+[id="00"] {
+  --border-width: 0px 5px 5px 0px;
+}
+
+[id="10"] {
+  --border-width: 0px 5px 5px 0;
+}
+
+[id="20"] {
+  --border-width: 0px 5px 0 0;
+}
+
+[id="01"] {
+  --border-width: 0px 5px 5px 0;
+}
+
+[id="11"] {
+  --border-width: 0px 5px 5px 0;
+}
+
+[id="21"] {
+  --border-width: 0px 5px 0 0;
+}
+
+[id="02"] {
+  --border-width: 0px 0px 5px 0;
+}
+
+[id="12"] {
+  --border-width: 0px 0px 5px 0;
+}
+
+[id="22"] {
+  --border-width: 0px 0px 0 0;
+}
+
+
+.ButtonX {
+  --background: url(../../assets/images/cat.png) 0 0/100% 100% no-repeat;
+ }
+ 
+ .ButtonO {
+  --background: url(../../assets/images/dog.png) 0 0/100% 100% no-repeat;
+  }
+ 
+  .Button_ {
+   --background-color: rgba(67, 38, 148, 0);
+  }
+ 
+
+#labels {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  ion-card {
+    margin: 2px;
+    padding: 0 !important;
+    ion-card-header {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+ion-footer {
+  height: 55px;
+}
+
+ion-footer ion-button {
+  height: 55px;
+  text-transform: none;
+}
+
+
