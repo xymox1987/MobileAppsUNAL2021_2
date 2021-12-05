@@ -1,5 +1,5 @@
 # UNAL: Desarrollo de Aplicaciones para Dispositivos Móviles
-# Challenge 6: Triqui Game Two Players Online
+# Challenge 7: Triqui Game Two Players Online
 
 ### Requerimientos:
 
