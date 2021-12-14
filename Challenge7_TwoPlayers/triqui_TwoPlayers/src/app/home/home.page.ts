@@ -6,6 +6,7 @@ import { Storage } from '@ionic/storage';
 import { MenuController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { AboutPage } from "../about/about.page";
+import { Message, RealTimePlayerService } from '../real-time-player.service';
 
 @Component({
   selector: 'app-home',
@@ -34,6 +35,7 @@ export class HomePage {
     private storage: Storage,
     private menu: MenuController,
     private modalController: ModalController,
+    private realTimePlayerService: RealTimePlayerService
 
   ) {
     this.data = [['', '', ''],
@@ -49,6 +51,19 @@ export class HomePage {
     this.theme = 'dark';
     this.setTheme(true);
     this.isBrowser = this.platform.is('desktop') || this.platform.is('mobileweb');
+
+    this.realTimePlayerService.NuevaRondaReceived.subscribe(async (message:Message)=>{
+      console.log(message.user);
+      console.log(message.message);
+      const alert = await this.alertController.create({
+        cssClass: 'alert-game-over',
+        header: message.user,
+        message: message.message,
+        buttons: ['OK'],
+      });
+      await alert.present();
+    });
+
     this.subscription = this.platform.backButton.subscribeWithPriority(10000, async () => {
       await this.alertExit()
     });

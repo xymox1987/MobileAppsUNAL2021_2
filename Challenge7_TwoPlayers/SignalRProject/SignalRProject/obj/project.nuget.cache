@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0aN8zIZb87PrhOb1X52Lb53rLn2spi4x5vF74D7b5KvfIC/zepGaniTlVshiBQ0DCxVW8iCJtwcpWINp1atPBQ==",
+  "success": true,
+  "projectFilePath": "C:\\UNAL\\MobileAppsUNAL2021_2\\Challenge7_TwoPlayers\\SignalRProject\\SignalRProject\\SignalRProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhocarva\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
