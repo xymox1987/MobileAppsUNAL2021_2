@@ -37,3 +37,4 @@ C:\UNAL\MobileAppsUNAL2021_2\Challenge7_TwoPlayers\SignalRProject\SignalRProject
 C:\UNAL\MobileAppsUNAL2021_2\Challenge7_TwoPlayers\SignalRProject\SignalRProject\obj\Debug\net5.0\SignalRProject.pdb
 C:\UNAL\MobileAppsUNAL2021_2\Challenge7_TwoPlayers\SignalRProject\SignalRProject\obj\Debug\net5.0\SignalRProject.genruntimeconfig.cache
 C:\UNAL\MobileAppsUNAL2021_2\Challenge7_TwoPlayers\SignalRProject\SignalRProject\obj\Debug\net5.0\SignalRProject.csproj.CopyComplete
+C:\UNAL\MobileAppsUNAL2021_2\Challenge7_TwoPlayers\SignalRProject\SignalRProject\obj\Debug\net5.0\SignalRProject.csproj.AssemblyReference.cache

@@ -52,7 +52,7 @@ export class HomePage {
     this.setTheme(true);
     this.isBrowser = this.platform.is('desktop') || this.platform.is('mobileweb');
 
-    this.realTimePlayerService.NuevaRondaReceived.subscribe(async (message:Message)=>{
+    this.realTimePlayerService.SendMessageEvent.subscribe(async (message:Message)=>{
       console.log(message.user);
       console.log(message.message);
       const alert = await this.alertController.create({
@@ -63,6 +63,24 @@ export class HomePage {
       });
       await alert.present();
     });
+
+
+
+
+    this.realTimePlayerService.StartGameEvent.subscribe(()=>{
+      this.startGameSignalR();
+    });
+    this.realTimePlayerService.RestartGameEvent.subscribe(()=>{
+      this.restartGameSignalR();
+    });
+    this.realTimePlayerService.ChangeModeEvent.subscribe((mode:string)=>{
+      this.changeModeSignalR(mode);
+    });
+    this.realTimePlayerService.MoveEvent.subscribe((point:string)=>{
+      this.moveSignalR(point);
+    });
+
+
 
     this.subscription = this.platform.backButton.subscribeWithPriority(10000, async () => {
       await this.alertExit()
@@ -90,8 +108,10 @@ export class HomePage {
       this.aboutPageModal();
     }
   }
-
   move(id: string) {
+    this.realTimePlayerService.Move(id);
+  }
+  moveSignalR(id: string) {
     if (document.getElementById('start-game').innerHTML === 'Start') {
       document.getElementById('start-game').innerHTML = 'Restart Game';
     }
@@ -140,6 +160,9 @@ export class HomePage {
   }
 
   startGame() {
+    this.realTimePlayerService.StartGame();
+  }
+  startGameSignalR() {
     if (document.getElementById('start-game').innerHTML === 'Start') {
       document.getElementById('start-game').innerHTML = 'Restart Game';
       this.aiTurn();
@@ -307,6 +330,12 @@ export class HomePage {
   }
 
   restartGame(event: any = null) {
+    this.realTimePlayerService.RestartGame();
+  }
+
+
+
+  restartGameSignalR(event: any = null) {
 
     this.data = [['', '', ''],
     ['', '', ''],
@@ -338,6 +367,11 @@ export class HomePage {
     }
   }
 
+  changeMode() {
+    const mode=document.getElementById('mode-label').innerHTML;
+    this.realTimePlayerService.ChangeMode(mode);
+  }
+
   resetScores() {
     this.scoreX = 0;
     this.scoreO = 0;
@@ -347,8 +381,9 @@ export class HomePage {
     document.getElementById('score-t-label').innerHTML = String(this.scoreT);
   }
 
-  changeMode() {
-    if (document.getElementById('mode-label').innerHTML === '1P') {
+  changeModeSignalR(mode:string) {
+    document.getElementById('mode-label').innerHTML=mode;
+    if (mode === '1P') {
       this.mode = '2P';
       document.getElementById('mode-label').innerHTML = '2P';
       document.getElementById('next-label').innerHTML = 'X';
