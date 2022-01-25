@@ -31,4 +31,4 @@ Repositorio para los trabajos que la materia Desarrollo de Dispositivos Móviles
 
 ### Challenge 9: Leaflet Maps
 
-- [Challenge_9: Leaflet Maps](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge8_SQLite)
+- [Challenge_9: Leaflet Maps](https://github.com/xymox1987/MobileAppsUNAL2021_2/tree/master/Challenge9_Maps)
