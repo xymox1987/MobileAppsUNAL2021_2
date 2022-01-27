@@ -1,0 +1,32 @@
+.toolbar-header {
+  color: var(--ion-color-primary-contrast);
+  padding: 0 !important;
+}
+
+ion-searchbar {
+  padding: 0 !important;
+  max-width: 542.22px;
+}
+
+ion-fab-button {
+  --background: var(--ion-color-light);
+}
+
+.country-card ion-card-content {
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.toolbar-icon {
+  vertical-align: middle;
+  color: var(--ion-color-primary-light);
+}
+
+.list-back-arrow {
+  color: var(--ion-color-primary-contrast);
+  font-size: 32px;
+}
+
+#scroll-list{
+  height: 100vh;
+}
