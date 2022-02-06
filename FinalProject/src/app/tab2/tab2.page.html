@@ -16,81 +16,17 @@
   <!-- Searchbar with cancel button shown on focus -->
 <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
-  <ion-item>
+  <ion-item *ngFor ="let item of products">
     <ion-avatar slot="start">
       <img src=".\assets\images\abono.png">
     </ion-avatar>
     <ion-label>
-      <h2> <span style="color:#7EF06D" >Abono Cultivo</span></h2>
-      <p>Calarca, Quindio</p>
+      <h2> <span style="color:#7EF06D" >{{item.name}}</span></h2>
+      <p>{{item.description}}</p>
+      <p>${{item.price}}</p>
     </ion-label>
     <ion-button fill="outline" slot="end">Contactar</ion-button>
   </ion-item>
 
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\agricultura.jpg">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" >Servicio Agricultura</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\roceador.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" >Kit Roceador de agua</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\semillas.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Semillas</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\transporte.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Servicio de Transporte</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\abono.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Hectareas </span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\palma.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Aceite de Palma </span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Contactar</ion-button>
-  </ion-item>
 
 </ion-content>
