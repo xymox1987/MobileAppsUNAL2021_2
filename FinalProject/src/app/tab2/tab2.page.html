@@ -18,7 +18,8 @@
 
   <ion-item *ngFor ="let item of products">
     <ion-avatar slot="start">
-      <img src=".\assets\images\abono.png">
+      <!--<img src=".\assets\images\abono.png">-->
+      <img src="{{item.uriImage}}">
     </ion-avatar>
     <ion-label>
       <h2> <span style="color:#7EF06D" >{{item.name}}</span></h2>

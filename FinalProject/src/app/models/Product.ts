@@ -8,5 +8,6 @@ export interface Product {
   description: string;
   price: number;
   idUser: string;
+  uriImage: string;
   user?: User;
 }
