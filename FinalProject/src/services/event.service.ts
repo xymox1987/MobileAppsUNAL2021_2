@@ -14,4 +14,8 @@ export class EventService extends GenericService {
     this.apiURL = environment.serverBackUrl + 'api/Event';
   }
 
+
+  public async getEvents(): Promise<any> {
+    return await this.httpClient.get<any>(this.apiURL+'/getEvents').toPromise();
+  }
 }

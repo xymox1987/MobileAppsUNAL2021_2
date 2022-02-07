@@ -11,11 +11,11 @@ export class FriendService extends GenericService {
 
   constructor(private http: HttpClient) {
     super(http);
-    this.apiURL = environment.serverBackUrl + 'api/Event';
+    this.apiURL = environment.serverBackUrl + 'api/Friend';
   }
 
-  public async getAllByUser(userId:string): Promise<any> {
-    return await this.httpClient.get<any>(this.apiURL+'/xxx').toPromise();
+  public async getMyFriends(userId:string): Promise<any> {
+    return await this.httpClient.get<any>(this.apiURL+'/getMyFriends/'+userId).toPromise();
   }
 
 }

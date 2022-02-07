@@ -16,82 +16,17 @@
   <!-- Searchbar with cancel button shown on focus -->
   <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profileW.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" >Jane Smith</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
 
-  <ion-item>
+  <ion-item *ngFor ="let item of friends">
     <ion-avatar slot="start">
       <img src=".\assets\images\profile.png">
     </ion-avatar>
     <ion-label>
-      <h2> <span style="color:#7EF06D" >Jhon Doe 2</span></h2>
-      <p>Calarca, Quindio</p>
+      <h2> <span style="color:#7EF06D" >{{item.userfriend.name}}</span></h2>
+      <p>Teléfono: {{item.userfriend.phone}}</p>
+      <p>Email:  {{item.userfriend.email}}</p>
     </ion-label>
     <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profileW.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" >Jane Smith 3</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profile.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Jhon Doe 4</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profileW.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Jane Smith 5</span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profile.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Jhon Doe 5 </span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src=".\assets\images\profileW.png">
-    </ion-avatar>
-    <ion-label>
-      <h2> <span style="color:#7EF06D" > Jane Smith 6 </span></h2>
-      <p>Calarca, Quindio</p>
-    </ion-label>
-    <ion-button fill="outline" slot="end">Chat</ion-button>
-  </ion-item>
-
+</ion-item>
 
 </ion-content>

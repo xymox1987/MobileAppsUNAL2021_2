@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventService } from '../../services/event.service';
 
 
 @Component({
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab4.page.scss'],
 })
 export class Tab4Page implements OnInit {
+  events: Event[];
+  constructor(private eventService: EventService) {
 
-  constructor() { }
+  }
 
-  ngOnInit() {
+  async ngOnInit() {
+    this.events = await this.eventService.getEvents();
   }
 
 }
