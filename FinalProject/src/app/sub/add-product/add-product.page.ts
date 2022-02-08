@@ -17,6 +17,8 @@ export class AddProductPage implements OnInit {
     this.productModel = {
       name: '',
       description: '',
+      uriImage: '',
+      price:0,
       idUser: 'd6624583-28d6-43dc-8d0e-5389d6270c94'
     } as Product;
   }

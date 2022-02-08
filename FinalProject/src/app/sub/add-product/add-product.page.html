@@ -1,20 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>hola mundo</ion-title>
+    <ion-title>
+      <span style="color:#7EF06D" class="ion-float-left" >PALM</span>
+      <span style="color:#FABC2D" class="ion-float-left">APP</span>
+
+
+      <ion-icon name="flower-outline" class="ion-float-right"></ion-icon>
+      <span style="color:#2D37FA" class="ion-float-right">Create Product</span>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <form (ngSubmit)="logForm()">
-    <ion-item>
-      <ion-label>Name</ion-label>
-      <ion-input type="text" [(ngModel)]="productModel.name" name="title"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Description</ion-label>
-      <ion-textarea [(ngModel)]="productModel.description" name="description"></ion-textarea>
-    </ion-item>
-    <ion-button fill="outline" slot="end" (click)="cancel()">Cancel</ion-button>
-    <button ion-button type="submit" block>Save</button>
+
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="productModel.name" name="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea [(ngModel)]="productModel.description" name="description"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Url Image</ion-label>
+        <ion-textarea [(ngModel)]="productModel.uriImage" name="url" type="url"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Price $</ion-label>
+        <ion-textarea [(ngModel)]="productModel.price" name="price" type="number"></ion-textarea>
+      </ion-item>
+
+
+
+    <!--<ion-button fill="outline" slot="end" (click)="cancel()">Cancel</ion-button>-->
+    <!--<button ion-button type="submit" block>Save</button>-->
+
+    <ion-button  fill="outline" slot="end" (click)="cancel()">
+      Cancel
+       <ion-icon  slot="end" name="play-back-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button type="submit" block>
+      Save
+       <ion-icon  slot="end" name="save-outline"></ion-icon>
+    </ion-button>
+
   </form>
 </ion-content>

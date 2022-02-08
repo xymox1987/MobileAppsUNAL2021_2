@@ -12,11 +12,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
 
-
-
+  <ion-fab vertical="top" horizontal="end" >
+    <ion-fab-button color="tertiary" size="small" (click)="addEvent()">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-header>
+<ion-content  [fullscreen]="true">
 
 
   <ion-item *ngFor ="let item of events">
@@ -29,8 +37,18 @@
       <p>{{item.description}}</p>
       <p>Fecha: {{item.date}}</p>
     </ion-label>
-    <ion-button fill="outline" slot="end">Registrarse</ion-button>
-  </ion-item>
+    <ion-fab-button color="light" size="small" >
+      <ion-icon name="document-text-outline"></ion-icon>
+    </ion-fab-button>
+
+
+    <ion-fab-button color="success" size="small" >
+      <ion-icon name="mail-open-outline"></ion-icon>
+    </ion-fab-button>
+   </ion-item>
+
+
+
 
 
 </ion-content>

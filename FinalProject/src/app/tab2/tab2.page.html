@@ -11,10 +11,23 @@
   </ion-toolbar>
 </ion-header>
 
+
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-fab vertical="top" horizontal="end" >
+    <ion-fab-button color="tertiary" size="small" (click)="addProduct()">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-header>
+
 <ion-content [fullscreen]="true">
 
-  <!-- Searchbar with cancel button shown on focus -->
-<ion-searchbar showCancelButton="focus"></ion-searchbar>
+
 
   <ion-item *ngFor ="let item of products">
     <ion-avatar slot="start">
@@ -31,9 +44,7 @@
       <ion-icon name="document-text-outline"></ion-icon>
     </ion-fab-button>
 
-    <ion-fab-button color="warning" size="small" >
-      <ion-icon name="create-outline"></ion-icon>
-    </ion-fab-button>
+
     <ion-fab-button color="danger" size="small" (click)="deleteConfirm(item.id)">
       <ion-icon name="close-circle-outline"></ion-icon>
     </ion-fab-button>
@@ -47,13 +58,6 @@
 
    <!-- <ion-button fill="outline" slot="end">Contactar</ion-button>-->
   </ion-item>
-
-
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
-    <ion-fab-button color="tertiary" size="small" (click)="addProduct()">
-      <ion-icon name="add-circle-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
 
 </ion-content>

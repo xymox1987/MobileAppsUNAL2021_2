@@ -33,7 +33,7 @@ export class Tab2Page implements OnInit {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
       header: 'Confirm!',
-      message: 'Message <strong>Delete Product?</strong>!!!',
+      message: ' Are you sure you want to <strong>delete the product?</strong>!!!',
       buttons: [
         {
           text: 'Cancel',
