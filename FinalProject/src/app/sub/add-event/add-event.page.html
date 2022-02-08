@@ -25,6 +25,16 @@
       </ion-item>
 
       <ion-item>
+        <ion-label>City Event</ion-label>
+        <ion-select [(ngModel)]="eventModel.idcity" value="city"  name="idcity" interface="popover">
+          <ion-select-option [value]="city.id" *ngFor="let city of cities">{{city.description}}</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+
+
+
+      <ion-item>
         <ion-label position="floating">Url Image</ion-label>
         <ion-input [(ngModel)]="eventModel.uriImage" name="url" type="url"></ion-input>
       </ion-item>

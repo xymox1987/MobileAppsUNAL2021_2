@@ -1,7 +1,10 @@
+import { City } from './../../models/City';
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../../../services/event.service';
 import { NavController } from '@ionic/angular';
 import { Event } from './../../models/Event';
+import { User } from '../../models/User';
+import { UserService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-add-event',
@@ -11,11 +14,15 @@ import { Event } from './../../models/Event';
 export class AddEventPage implements OnInit {
 
   eventModel: Event;
-  constructor(private eventService: EventService, public navCtrl: NavController) { }
+  cities: City [];
+  constructor(private eventService: EventService,
+              private userService : UserService,
+              public navCtrl: NavController)
+                 { }
 
 
 
-  ngOnInit() {
+ async ngOnInit() {
     this.eventModel = {
       name: '',
       description: '',
@@ -25,6 +32,11 @@ export class AddEventPage implements OnInit {
       idcity : 6,
       idUser: 'd6624583-28d6-43dc-8d0e-5389d6270c94'
     } as Event;
+    await this.loadCities();
+  }
+
+  async loadCities(){
+    this.cities = await this.userService.getCitiesAsync();
   }
 
   async logForm() {
