@@ -1,6 +1,6 @@
-import { City } from "./City";
-import { User } from "./User";
-import { EventType } from "./EventType";
+import { City } from './City';
+import { User } from './User';
+
 
 
 export interface Farming {
@@ -9,13 +9,8 @@ export interface Farming {
   description: string;
   latitude: number;
   longitude: number;
-  uriImage: string;
-  uriVideo: string;
-  date: Date;
-  eventTypeId: number;
   idcity: number;
   idUser: string;
-  eventType?: EventType;
   city?: City;
   user?: User;
 }

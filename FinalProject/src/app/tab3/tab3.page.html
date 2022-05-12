@@ -14,20 +14,8 @@
 <ion-content [fullscreen]="true">
 
 
-  <!-- Default Segment -->
-<ion-segment (ionChange)="segmentChanged()">
-  <ion-segment-button value="friends">
-    <ion-label>Buscar Mapa</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="enemies">
-    <ion-label>Cerca de mí</ion-label>
-  </ion-segment-button>
-</ion-segment>
-
-<ion-col size="4">
-  <img src=".\assets\images\map.png" alt="" class="image-round border-tertiary margin-top">
-</ion-col>
-
+<div id="mapId" style="width: 100%; height: 100%">
+</div>
 
 
 

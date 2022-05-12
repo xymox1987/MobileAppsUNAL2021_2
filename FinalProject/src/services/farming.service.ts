@@ -14,4 +14,9 @@ export class FarmingService  extends GenericService {
     this.apiURL = environment.serverBackUrl + 'api/Farming';
   }
 
+  public async getAllFarmings(): Promise<any> {
+
+    return await this.httpClient.get<any>(this.apiURL + '/getFarmings').toPromise();
+  }
+
 }
